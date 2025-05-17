@@ -1,0 +1,38 @@
+/*
+
+VARIABLES
+
+*/
+
+:root 
+{   
+    /* 
+    
+    BASE COLORS 
+    
+    */   
+    
+    --moddable-bg: #222831;
+}
+
+/*
+
+-----------------------------------------------------
+BELOW THESE VARIABLES ARE ATTRIBUTES THAT USE COLOURS
+-----------------------------------------------------
+
+BACKGROUNDS
+
+*/
+
+html, body,
+html body
+{
+    background-color: var(--moddable-bg);
+    
+    /* ANIMATED BG */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}

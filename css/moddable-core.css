@@ -1,0 +1,117 @@
+/*
+
+RESETS
+
+*/
+
+alert.alert,
+.btn.btn-block,
+img.img.img-block
+{
+    width: 100%;
+    display: block;
+    text-align: center;
+    background: transparent;
+}
+html body
+{
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+}
+html body .container
+{
+    position: relative;
+    z-index: 2;
+}
+
+/*
+
+IMAGE BACKGROUNDS
+
+*/
+
+html body:before
+{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/hex-land.jpg);
+    background-size: cover;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+/*
+
+LOGO
+
+*/
+
+html body .logo
+{
+    margin-top: calc(50vh - 150px);
+}
+
+/*
+
+ICONS
+
+*/
+
+html body .btn.btn-i
+{
+    display: inline-block;
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 2rem;
+    background: #000;
+    border: 1px dotted #FFF;
+    line-height: 4rem;
+    margin: 1rem;
+}
+html body .btn.btn-i:hover
+{
+    background: transparent;
+    border-style: solid;
+    border-color: #000;
+}
+html body .btn.btn-i i
+{
+    color: #FFF;
+    font-size: 2rem;
+    opacity: 1;
+}
+html body .btn.btn-i:hover i
+{
+    color: #FFFF99;
+}
+
+/*
+
+ANIMATE
+
+*/
+
+html body .btn.btn-i,
+html body .btn.btn-i i,
+{
+    transition: all 0.42s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
